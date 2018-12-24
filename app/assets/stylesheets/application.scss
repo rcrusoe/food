@@ -1,0 +1,58 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import url("//hello.myfonts.net/count/346d7b");
+ @font-face {
+     font-family: 'AmerigoBT-MediumA';
+     src: font-url('346D7B_0_0.eot');
+     src: font-url('346D7B_0_0.eot?#iefix') format('embedded-opentype'),
+         font-url('346D7B_0_0.woff2') format('woff2'),
+         font-url('346D7B_0_0.woff') format('woff'),
+         font-url('346D7B_0_0.ttf') format('truetype');
+ }
+
+ $dark: #000;
+ $light: #FFF9B3;
+
+ .container {
+   max-width: 600px;
+   margin: 200px auto 60px;
+ }
+
+ html {
+   background: $dark;
+   color: $light;
+   font-size: 62.5%;
+ }
+
+ body {
+   padding: 0;
+   margin: 0;
+ }
+
+ h1 {
+   font-family: 'AmerigoBT-MediumA', 'Georgia', serif;
+   font-size: 6rem;
+   line-height: 1.3;
+ }
+
+ p,
+ li {
+   font-family: 'Jura', sans-serif;
+   font-size: 2rem;
+   letter-spacing: .3px;
+   line-height: 1.5;
+ }
