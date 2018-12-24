@@ -29,8 +29,12 @@
 
  .container {
    max-width: 600px;
-   margin: 200px auto 60px;
+   margin: 60px auto;
    padding: 20px;
+
+   @media (min-width: 750px) {
+     margin-top: 200px;
+   }
  }
 
  html {
